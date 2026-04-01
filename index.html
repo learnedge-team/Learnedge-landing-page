@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnEdge — Gamified Learning Powered by AI</title>
+  <meta name="description"
+    content="LearnEdge is a gamified education platform powered by AI. Learn smarter with curated resources, quizzes, leaderboards, and Pingo AI assistant." />
+  <meta name="keywords" content="LearnEdge, gamified learning, AI education, Pingo AI, online learning platform" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="learnedge logo image .jpeg" type="image/jpeg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Boxicons for social/nav icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ======================== PARTICLE CANVAS ======================== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="images\learnedgelogoimage.jpeg" alt="LearnEdge Logo" class="logo-img" width="40" height="40" />
+        Learn<span class="gradient-text">Edge</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#vision">Vision</a>
+        <a href="#services">Features</a>
+        <a href="#team">Team</a>
+        <a href="#footer">Contact</a>
+        <a href="#hero" class="nav-cta">Get Started</a>
+      </div>
+
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================== SLIDE 1 — HERO ======================== -->
+  <section class="hero" id="hero">
+    <!-- Video Background -->
+    <div class="hero-video-wrap">
+      <video autoplay loop muted playsinline>
+        <source src="video/landingpage.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Main Content -->
+    <div class="hero-content">
+      <h1>
+        Learn Smarter.<br />
+        <span class="gradient-text">Compete Better.</span><br />
+        Grow Faster.
+      </h1>
+      <p class="hero-sub">
+        Gamified education platform powered by AI — earn points, climb leaderboards, and master skills with Pingo at
+        your side.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn-primary" id="cta-get-started"
+          onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+          Get Started
+        </button>
+        <button class="btn-secondary" id="cta-explore"
+          onclick="document.getElementById('vision').scrollIntoView({behavior:'smooth'})">
+          Explore Features
+        </button>
+      </div>
+    </div>
+
+    <!-- Floating Glass Stat Cards -->
+    <div class="floating-cards">
+      <div class="float-card float-card-1">
+        <div class="card-label">Total Points</div>
+        <div class="card-value cyan" data-count="12480" data-suffix=" pts">0</div>
+      </div>
+      <div class="float-card float-card-2">
+        <div class="card-label">Global Rank</div>
+        <div class="card-value purple" data-count="37" data-prefix="#">0</div>
+      </div>
+      <div class="float-card float-card-3">
+        <div class="card-label">Day Streak</div>
+        <div class="card-value pink" data-count="64" data-suffix=" 🔥">0</div>
+      </div>
+
+    </div>
+
+    <!-- Leaderboard Mini Preview -->
+    <div class="leaderboard-mini">
+      <h4>🏆 Live Leaderboard</h4>
+      <div class="lb-row">
+        <span class="lb-rank gold">1</span>
+        <span class="lb-name">AyushK</span>
+        <span class="lb-pts">14,230 pts</span>
+      </div>
+      <div class="lb-row">
+        <span class="lb-rank silver">2</span>
+        <span class="lb-name">PriyaS</span>
+        <span class="lb-pts">13,890 pts</span>
+      </div>
+      <div class="lb-row">
+        <span class="lb-rank bronze">3</span>
+        <span class="lb-name">RahulM</span>
+        <span class="lb-pts">12,480 pts</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SLIDE 2 — VISION ======================== -->
+  <section class="vision" id="vision">
+    <div class="container">
+      <div class="vision-header">
+        <span class="section-label">✦ Our Mission</span>
+        <h2 class="section-title">Our <span class="gradient-text">Vision</span></h2>
+        <p class="section-subtitle">
+          We're building the future of education — personalized, gamified, and powered by intelligent technology that
+          adapts to every learner.
+        </p>
+      </div>
+
+      <div class="vision-grid">
+        <!-- Card 1 -->
+        <div class="vision-card">
+          <div class="vision-icon icon-learn">🎯</div>
+          <h3>Personalized Learning</h3>
+          <p>Learn from carefully selected resources tailored to your growth. Our adaptive engine curates content that
+            matches your pace and goals.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="vision-card">
+          <div class="vision-icon icon-game">🎮</div>
+          <h3>Gamified Experience</h3>
+          <p>Earn points, unlock achievements, and climb leaderboards. Transform every study session into an exciting
+            challenge.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="vision-card">
+          <div class="vision-icon icon-ai">🤖</div>
+          <h3>AI-Driven Support</h3>
+          <p>Always-available intelligent assistant for guidance. Pingo AI understands your questions and delivers
+            precise, contextual help.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="vision-card">
+          <div class="vision-icon icon-global">🌍</div>
+          <h3>Multi-Domain & Multi-Language</h3>
+          <p>Learn anything, anytime, in your preferred language. From coding to academics, we cover every domain you
+            need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SLIDE 3 — SERVICES ======================== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header">
+        <span class="section-label">✦ AI Features</span>
+        <h2 class="section-title">Powered by <span class="gradient-text">Pingo AI</span></h2>
+        <p class="section-subtitle">
+          Meet Pingo — your always-on AI companion that solves problems, reviews code, plans your day, and accelerates
+          your learning journey.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <span class="service-emoji">🧠</span>
+          <h3>Problem Solver</h3>
+          <p>Step-by-step explanation of complex problems. Pingo breaks down tough concepts into digestible, visual
+            walkthroughs.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <span class="service-emoji">💻</span>
+          <h3>Code Reviewer</h3>
+          <p>Analyze and improve your code instantly. Get feedback on style, performance, and best practices in seconds.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <span class="service-emoji">💡</span>
+          <h3>Hint Generator</h3>
+          <p>Smart hints to guide without revealing answers. Build problem-solving skills with nudges in the right
+            direction.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <span class="service-emoji">🛠️</span>
+          <h3>Code Fix Provider</h3>
+          <p>Get corrected code with clear explanations. Understand what went wrong and learn the fix, not just the
+            patch.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <span class="service-emoji">📅</span>
+          <h3>Pingo Planner</h3>
+          <p>AI-powered day planner that automatically schedules your study sessions based on deadlines, priorities, and
+            energy levels.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <span class="service-emoji">🌐</span>
+          <h3>Multi-Domain Learning</h3>
+          <p>Covers coding, academics, competitive exams, and more. One AI — every domain, every question, every
+            language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SLIDE 4 — TEAM ======================== -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="team-header">
+        <span class="section-label">✦ The Team</span>
+        <h2 class="section-title">Meet Our <span class="gradient-text">Core Members</span></h2>
+        <p class="section-subtitle">
+          The passionate minds behind LearnEdge — building the future of education one feature at a time.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Member 1 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images\omsingh.jpeg" alt="Om Singh" loading="lazy" />
+          </div>
+          <h3>Om Singh</h3>
+          <p class="team-role">Team Lead / Full Stack Engineer</p>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images\shreeyanshasati.jpeg" alt="Shreeyansh Asati" loading="lazy" />
+          </div>
+          <h3>Shreeyansh Asati</h3>
+          <p class="team-role">LearnEdge Manager / AIML Engineer</p>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images\NancyJha.webp" alt="Nancy Jha" loading="lazy" />
+          </div>
+          <h3>Nancy Jha</h3>
+          <p class="team-role">Tech Lead</p>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images\aryankushwaha.jpeg" alt="Aryan Kushwaha" loading="lazy" />
+          </div>
+          <h3>Aryan Kushwaha</h3>
+          <p class="team-role">Head Designer</p>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images\dheerajsingh.jpeg" alt="Dheeraj Singh" loading="lazy" />
+          </div>
+          <h3>Dheeraj</h3>
+          <p class="team-role">Technical Content Writer & DevOps Engg</p>
+        </div>
+
+        <!-- Member 6 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images\Divya.webp" alt="Divya Bichpuriya" loading="lazy" />
+          </div>
+          <h3>Divya Bichpuriya</h3>
+          <p class="team-role">Marketing Manager</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images\learnedgelogoimage.jpeg" alt="LearnEdge Logo" class="logo-img" width="32" height="32" />
+            Learn<span class="gradient-text">Edge</span>
+          </div>
+          <p class="footer-tagline">Empowering learners through AI &amp; gamification. Study smarter, compete harder,
+            and grow every single day.</p>
+        </div>
+
+        <!-- Links: Platform -->
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="#vision">Our Vision</a>
+          <a href="#services">Features</a>
+          <a href="#">Leaderboards</a>
+          <a href="#">Quizzes</a>
+        </div>
+
+        <!-- Links: Pingo AI -->
+        <div class="footer-col">
+          <h4>Pingo AI</h4>
+          <a href="#">Problem Solver</a>
+          <a href="#">Code Reviewer</a>
+          <a href="#">Study Planner</a>
+          <a href="#">Hint Generator</a>
+        </div>
+
+        <!-- Links: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 LearnEdge. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="mailto:learnedge.asper@gmail.com" aria-label="Gmail"><i class="bx bxl-gmail"></i></a>
+          <a href="https://www.instagram.com/accounts/login/?next=%2Flearnedge.co.in&source=omni_redirect"
+            aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== SCRIPTS ======================== -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
